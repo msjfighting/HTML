@@ -1,0 +1,141 @@
+/*
+id 选择器优先级 > class > 控件
+
+*/
+body{
+    background-color: darkgreen;
+    color: bisque;
+    font-style: italic;
+   /* background-image: url(../image/1.jpg);
+    background-repeat: no-repeat; !*是否重复平铺整个屏幕 x轴 y轴 平铺*!
+    background-position: 20px 20px; !* 背景位置 x y 轴 *!*/
+
+    /*background: red url(../image/1.jpg) no-repeat 20px 20px; !*缩写*!*/
+}
+
+.p p{
+    color: white;
+}
+#ppp{
+    color: blue;
+}
+a:link{
+    color: red;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: yellow;
+}
+a:visited{
+    color: blue;
+}
+
+.pp{
+    color: white;
+    font-size: 25px;
+    font-family: '宋体','微软雅黑';
+    font-weight: bolder;;
+}
+h1{
+    font-family: '微软雅黑';
+
+}
+.ha{
+    font-weight: normal;
+    font-style: normal;
+}
+.hb{
+    font-weight: bold;
+    font-style: italic;
+}
+.hc{
+    font-weight: lighter;
+    font-style: oblique;
+}
+.hd{
+    font-weight: bolder;
+    font-style: inherit;
+}
+div{
+    width: 50px;
+    height: 50px;
+    background-color: darkred;
+    margin-right: 10px; /*外边距属性*/
+    float: left; /*浮动属性*/
+
+}
+.text{
+   /*text-align: left;*/
+    /*font-size: 20px;*/
+    /*line-height: 200%;*/
+    /*text-indent: 40px;*/
+    /*letter-spacing: 3px;*/
+    /*word-spacing: 10px;*/
+    direction: rtl;
+    text-transform: lowercase;
+}
+.div1{
+    border-top-style: solid;  /*边框属性 boder*/
+    border-width: thin;
+    border-color: red;
+    /*
+    一个值表示上 下 左 右
+    两个值表示 上下 左右
+    三个值表示 上 左右 下
+    四个值表示 上 右 下 左
+    */
+}
+.div2{
+    border-right-style: dashed;  /*边框属性 boder*/
+    border-width: medium;
+    border-color: green;
+}
+.div3{
+    border-bottom-style: dotted;  /*边框属性 boder*/
+    border-width: thick;
+    border-color: aquamarine;
+}
+.div4{
+    border-style: double;  /*边框属性 boder*/
+    border-width: 10px;
+    border-color: blue;
+}
+.div5,.div6,.div7,.div8{
+
+    width: 40px;
+    height: 40px;
+    /*background: none;*/
+    /*border-width: 20px;*/
+    /*border-color: #aaa #bbb #ccc #ddd;*/
+    border: solid 5px black;
+}
+.div5{
+    border-style: groove;
+}
+.div6{
+    border-style: ridge;
+}
+.div7{
+    border-style: inset;
+}
+.div8{
+    border-style: outset;
+}
+ul{
+    /*list-style-type:none;*/
+    /*list-style-type:circle; !*空心圆*!*/
+    /*list-style-type: lower-latin;*/
+    list-style-image: url(../image/2.png);
+}
+ol{
+    list-style-type: none;
+    list-style-type:circle; /*空心圆*/
+}
+/*.inside{*/
+    /*list-style-position: inside; !* 列表项目标放置在文本以内 且环绕文本根据标记对齐*!*/
+/*}*/
+/*.ouside{*/
+    /*list-style-position: outside; !* 默认值 保持标记位于文本的左侧 列表项目标放置在文本以外 且环绕文本不根据标记对齐*!*/
+/*}*/

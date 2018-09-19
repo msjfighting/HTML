@@ -1,0 +1,92 @@
+body{
+    margin-top: 0px; /*外边距*/
+    /*border: solid 10px;*/
+    /*border-color: blue;*/
+    padding: 0px;
+    background-color: white;
+}
+/*div{*/
+    /*background-color: aqua;*/
+    /*width: 500px;*/
+    /*height: 500px;*/
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+    /*border: solid 10px;*/
+/*}*/
+span{
+    background-color: green;
+}
+.div div{
+    margin: 10px;  /*外边距加10*/
+    padding: 10px;  /*加在div上*/
+    border: solid 10px;
+}
+.div{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: darkgreen;
+}
+.diva{
+    float: left;
+    width: 240px; /*宽度减去 margin padding border 值*2 保证在div中并排*/
+    height: 240px;/*高度度减去 margin padding border 值 保证在div中并排*/
+    background-color: red;
+
+
+}
+.divb{
+    float: left;
+    width: 240px;
+    height: 240px;
+    background-color: yellow;
+
+}
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative;  /*子元素相对于父元素定位的话 父元素必须设置为relative*/
+    top: 10px;
+}
+span{
+    position: absolute;  /*根据父元素进行定位*/
+    background-color: yellow;
+    top: 10px;
+    right: 0px;
+}
+/*
+clear: both 清除浮动
+overflow  溢出处理  hidden 隐藏超出层大小的内容  scroll 无论内容是否超出层大小都添加滚动条 auto 超出时自动添加滚动条
+*/
+.fixed{
+    position: fixed; /*fixed根据浏览器窗口进行定位 static没有定位*/
+    background-color: aquamarine;
+    top: 100px;
+    z-index: 1;   /*层覆盖先后顺序 叠在一起的标签 值大的显示在屏幕前*/
+    display: none; /*none 层不显示 block块状显示 在元素后面换行 显示下一块元素   inline 内联显示 多个块可以显示在一行内*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
