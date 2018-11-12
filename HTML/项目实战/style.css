@@ -1,0 +1,35 @@
+body{
+    background: #F6F6F6;
+    margin: 0;
+}
+.div1{
+    margin-top: 20px;
+   background: white;
+    width: 100%;
+}
+.login_div{
+    border-bottom: solid 2px #F6F6F6;
+}
+.title{
+    margin-left: 20px;
+    height: 30px;
+    font-size: 15px;
+    width: 10%;
+    line-height: 30px;
+    /*text-align: center;  */
+    display: inline-block;
+}
+.input{
+    border: thin;
+    width: 80%;
+    font-size: 12px;
+    height: 29px;
+}
+.login{
+    height: 35px;
+    margin: 20px;
+    text-align: center;
+    line-height: 35px;
+    background: green;
+    border-radius: 5px;
+}

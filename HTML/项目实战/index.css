@@ -1,0 +1,63 @@
+body{
+    margin: 8px;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+    /* absolute 绝对定位 相对于static定位以外的第一个父元素进行定位 元素通过 left top right bottom 属性进行规定  脱离文档流布局 遗留下来的空间由后面元素填充
+       flex 绝对定位 相对于浏览器窗口进行定位  元素通过 left top right bottom 属性进行规定 类似于absolute 但不随着滚动条移动
+       relative 相对定位 相对于其正常位置进行定位 因此left:20会向元素的left位置添加20像素 不脱离文档流布局 只改变自身位置 在文档流原先的位置遗留空白区域
+       static默认值 没有定位 元素出现在正常的流中
+       inherit 规定应该从父元素继承的position属性值*/
+.item li{
+    position: relative;
+    height: 57px;
+    line-height: 28px;
+    padding-left: 36px;
+    margin-bottom: 40px;
+}
+.item{
+    position: relative;
+    margin-top: 20px;
+    z-index: 1;    //  Z-index 尽在定位元素上有效
+}
+.item li .num{
+    position: absolute;
+    background: #54ab40 url("g3.png") no-repeat center;
+    height: 57px;
+    width: 57px;
+    line-height: 57px;
+    text-align: center;
+    display: block;
+    top: 0;
+    left: -37px;
+    border-radius:50%;border:1px solid #54ab40;
+    color: #54ab40;
+}
+.item:before{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background: red;
+    display: block;
+    top: 1px;
+    left: 31px;
+}
+.item li p{
+    margin: 0;
+}
+.state{
+    color: #333;
+    font-size: 15px;
+}
+.item li .state span{
+    padding-left: 10px;
+    color: #999;
+    font-size: 12px;
+}
+.date{
+    color: #999;
+    font-size: 12px;
+}
